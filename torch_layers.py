@@ -6,9 +6,6 @@
 # These function are 
 # - softmax
 # - cross_entropy
-# - reframe_1d: essential step in the 1d convolution
-# - reframe_2d: essential step in the 2d convolution
-# - Conv2d
 # - pos_encoding
 # - LayerNorm
 # - masked_multi_head_attention
