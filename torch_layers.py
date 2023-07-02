@@ -142,7 +142,7 @@ class masked_multi_head_attention(torch.nn.Module):
         q = self.lq(x)
         k = self.lk(x)
         v = self.lv(x)
-        batch_size, seq_length, d_model = x.shape[0], x.shape[1], x.shape[2]
+        d_model = x.shape[-1]
         q = q.reshape(
             *q.size()[:-1], self.num_heads, self.headsize).transpose(-3, -2)
         k = k.reshape(
